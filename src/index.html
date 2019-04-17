@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="stylesheet" href="./fonts/iconfont.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="swiper-container dacs">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./images/jessake.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./images/lin.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./images/newYork.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./images/we2.jpg" alt=""></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <div class="top">
+                <input type="text" placeholder="你想住在哪里？">
+            </div>
+        </header>
+
+        <section class="main">
+            <div class="list swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div><i class="iconfont icon-10"></i></div>
+                        <div><i class="iconfont icon-20"></i></div>
+                        <div><i class="iconfont icon-21"></i></div>
+                        <div><i class="iconfont icon-12"></i></div>
+                        <div><i class="iconfont icon-17"></i></div>
+                        <div><i class="iconfont icon-18"></i></div>
+                        <div><i class="iconfont icon-14"></i></div>
+                        <div><i class="iconfont icon-31"></i></div>
+                        <div><i class="iconfont icon-051"></i></div>
+                        <div><i class="iconfont icon-28"></i></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div><i class="iconfont icon-10"></i></div>
+                        <div><i class="iconfont icon-20"></i></div>
+                        <div><i class="iconfont icon-21"></i></div>
+                        <div><i class="iconfont icon-12"></i></div>
+                        <div><i class="iconfont icon-17"></i></div>
+                        <div><i class="iconfont icon-18"></i></div>
+                        <div><i class="iconfont icon-14"></i></div>
+                        <div><i class="iconfont icon-31"></i></div>
+                        <div><i class="iconfont icon-051"></i></div>
+                        <div><i class="iconfont icon-28"></i></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div>
+                <i class="iconfont icon-wode"></i>
+            </div>
+            <div>
+                <i class="iconfont icon-shouye"></i>
+            </div>
+            <div>
+                <i class="iconfont icon-18"></i>
+            </div>
+            <div>
+                <i class="iconfont icon-21"></i>
+            </div>
+            <div>
+                <i class="iconfont icon-28"></i>
+            </div>
+        </footer>
+    </div>
+
+    <script src="./js/flexible.js"></script>
+    <script src="./js/swiper.min.js"></script>
+    <script>
+        new Swiper('.dacs', {
+            autoplay: {
+                delay: 1200,
+                disableOnInteraction: false,
+            },
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true
+            }
+        })
+
+        new Swiper('.list',{
+            loop:true,
+        })
+    </script>
+</body>
+
+</html>
